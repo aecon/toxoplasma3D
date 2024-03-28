@@ -53,11 +53,11 @@ def generate_region_mask(brain_regions, resolution=25, is_half_brain=False):
         reshaped_masks.append(_tmp)
 
     # Exclude masked brain regions
-    all_areas_to_be_excluded = np.zeros(np.shape(reshaped_masks[0]))
+    all_areas = np.zeros(np.shape(reshaped_masks[0]))
     for i, _mask in enumerate(reshaped_masks):
-        all_areas_to_be_excluded[_mask==1] = i+1
+        all_areas[_mask==1] = i+1
 
-    return all_areas_to_be_excluded
+    return all_areas
 
 
 
@@ -76,4 +76,20 @@ if __name__ == "__main__":
     selected_regions = generate_region_mask(brain_regions, resolution)
 
     nrrd.write(args.o, selected_regions)
+
+    # Save total volume per region in pixels
+    total_volumes = np.zeros(len(brain_regions))
+    for i in range(len(brain_regions)):
+        print(i)
+        print(np.shape(selected_regions))
+        total_volumes[i] = np.sum(selected_regions==i+1)
+
+    with open("ABA_region_volume.dat", 'w') as f:
+        for br in brain_regions:
+            f.write("%25s " % br)
+        f.write("\n")
+        for volume in total_volumes:
+            f.write("%25d " % volume)
+        f.write("\n")
+
 
