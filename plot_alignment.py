@@ -1,19 +1,26 @@
-import matplotlib.pyplot as plt
-import numpy as np
+import argparse
 import skimage.io
+import numpy as np
 from numpy.ma import masked_array
+import matplotlib.pyplot as plt
 from matplotlib import cm
 
 
-# paths
-# -right
-resdir1="data/4864_right/align"
-fcells1="%s/elastix_data_to_atlas/result.1.mhd" % resdir1
-# -left
-resdir2="data/4864_left/align"
-fcells2="%s/elastix_data_to_atlas/result.1.mhd" % resdir2
+parser = argparse.ArgumentParser()
+parser.add_argument('-left',  type=str, required=True, help="left hemisphere aligned data, mhd")
+parser.add_argument('-right', type=str, required=True, help="right hemisphere aligned data, mhd")
+parser.add_argument('-a', type=str, required=True, help="atlas reference file, tif")
+parser.add_argument('-outputdir', type=str, required=True, help="path to output directory")
+parser.add_argument('-sampleID', type=str, required=True, help="sample ID")
+args = parser.parse_args()
+print(args)
 
-fatlas="atlas/ABA_25um_annotation.tif"
+
+# paths
+fcells1=args.right
+fcells2=args.left
+fatlas=args.a
+
 
 # load
 atlas  = skimage.io.imread(fatlas,  plugin='tifffile').T
@@ -31,26 +38,29 @@ cells = np.concatenate([cells2,np.flip(cells1, axis=(0,2))], axis=2)
 
 
 # visuals (adjusted from auto in Fiji)
-Vmin=0
-Vmax=600
+Vmin=50
+Vmax=500
+#atlas[atlas<20] = 0
+#atlas[atlas>250] = 250
 
 
 # plot coronal view
-Nc=5
-Nr=2
-fig,ax = plt.subplots(Nr,Nc, figsize=(20,8))
-slices = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500]
-for ir in range(2):
-    for ic in range(5):
-        k = int(Nc*ir + ic)
-        i = slices[k]
-        pa = ax[ir,ic].imshow(cells[:,i,:],interpolation='nearest',cmap=cm.gray, vmin=Vmin, vmax=Vmax)
-        pb = ax[ir,ic].contour(np.log10(atlas[:,i,:]+1), levels=10, linewidths=0.5, linestyles='--', colors='m')
-        print(np.min(atlas[:,i,:]), np.mean(atlas[:,i,:]), np.max(atlas[:,i,:]))
+Nc=9
+Nr=1
+fig,ax = plt.subplots(Nr,Nc, figsize=(36,4))
+slices = [50, 100, 150, 200, 250, 300, 350, 400, 450]
+for ic in range(9):
+    k = int(ic)
+    i = slices[k]
+    pa = ax[ic].imshow(cells[:,i,:],interpolation='nearest',cmap=cm.gray, vmin=Vmin, vmax=Vmax)
+    pb = ax[ic].contour(np.log10(atlas[:,i,:]+1), levels=10, linewidths=0.5, linestyles='-', colors='m')
+    # pb = ax[ic].contour(atlas[:,i,:], levels=3, linewidths=0.5, linestyles='-', colors='m')
+    print(np.min(atlas[:,i,:]), np.mean(atlas[:,i,:]), np.max(atlas[:,i,:]))
 
-        ax[ir,ic].set_axis_off()
+    ax[ic].set_axis_off()
 
 plt.subplots_adjust(wspace=0, hspace=0)
 
-plt.savefig("alignment.pdf", transparent=True, bbox_inches='tight', pad_inches=0)
+plt.savefig("%s/%s_alignment.png" % (args.outputdir, args.sampleID), transparent=True, bbox_inches='tight', pad_inches=0)
 plt.close()
+

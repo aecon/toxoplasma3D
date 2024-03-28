@@ -1,6 +1,7 @@
 #!/bin/bash
 set -eu
 
+base_ALLDATA="/media/neptun/LocalDisk16TB/Athena/Bracha_et_al_accepted_032024/FastSSD_Oded/baseline2_NOV21"
 base0="/media/neptun/LocalDisk16TB/Athena/Bracha_et_al_accepted_032024/paper_data/3D_mouse_brain_data"
 #base0="3D_mouse_brain_data"
 samples0=(4834 4836 4844 4849 4851 4858 4864 4868 4837 4840 4847 4848 4850 4871 4873 4838 4843)
@@ -14,6 +15,26 @@ samples2=(4837 4840 4847 4848 4850 4871 4873)
 samples3=(4838 4843)
 
 atlas="${base0}/ABA_atlas/ABA_25um_reference.tif"
+atlas_annotation="${base0}/ABA_atlas/ABA_25um_annotation.tif"
+
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Brain alignment in coronal slices
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+odir0="plots_alignment"
+mkdir -p $odir0
+
+# for sample in ${samples0[@]}; do
+#     left="${base_ALLDATA}/${sample}_left/align/elastix_data_to_atlas/result.1.mhd"
+#     right="${base_ALLDATA}/${sample}_right/align/elastix_data_to_atlas/result.1.mhd"
+#     ls $left
+#     ls $right
+#     ls $atlas_annotation
+#     python3 plot_alignment.py -left $left -right $right -a $atlas_annotation -outputdir $odir0 -sampleID $sample
+# done
+
+
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
