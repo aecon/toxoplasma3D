@@ -39,7 +39,6 @@ for i, rid in enumerate(Region_IDs):
         print("volume:", volume)
 
 with open(args.o, 'w') as f:
-
     f.write("%10s " % "Sample")
     for br in brain_regions:
         f.write("%25s " % br)

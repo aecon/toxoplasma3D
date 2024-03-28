@@ -2,3 +2,4 @@
 *.raw
 *.nrrd
 old
+tmp

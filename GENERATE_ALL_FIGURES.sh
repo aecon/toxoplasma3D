@@ -167,6 +167,6 @@ for f in ${files[@]}; do
 done
 
 # Plot region statistics
-o2=plots_statistics_2023Mar27
+o2=plots_statistics_2023Mar28
 python3 plot_regions.py -i ${o} -o ${o2}
 
