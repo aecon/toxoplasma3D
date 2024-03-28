@@ -11,16 +11,10 @@ args = parser.parse_args()
 if not os.path.exists(args.o):
     os.makedirs(args.o)
 
-#data = np.loadtxt("data_regions.dat", skiprows=1)
-#     Sample     CB         HB        HPF         HY         IC         TH
-#     4836     819496     452692     682678     117093    2005659      51202
-
 data = np.loadtxt(args.i, skiprows=1)
 
 dx=6.52*1.e-3
 dz=6.00*1.e-3
-#regions = ["CB", "HB", "HPF", "HY", "IC", "TH"]
-#regions = ["Cerebellum", "Brain stem", "Hippocampus", "Hypothalamus", "Cortex", "Thalamus"]
 regions = ["Brain stem", "Hippocampus", "Hypothalamus", "Cortex", "Thalamus"]
 vp = dx*dx*dz
 # 01_Toxofilin-Cre
