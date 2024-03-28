@@ -1,0 +1,9 @@
+NRRD0001
+type: uint32
+dimension: 3
+sizes: 201 200 39
+spacings: 1.5000000000000000e+00 1.5000000000000000e+00 1.0000000000000000e+00
+encoding: raw
+endian: little
+data file: labels32_z40.raw
+byte skip: 0
