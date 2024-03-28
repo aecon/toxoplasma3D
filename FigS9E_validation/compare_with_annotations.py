@@ -65,7 +65,7 @@ def confusion_matrix(ann, sim, o):
 
         fig, ax1 = plt.subplots(figsize=(4.3,2.5))
         ax2 = ax1.twinx()
-        color = '#02a0a9' #'#02ced9'
+        color = 'm' #'#02a0a9' #'#02ced9'
         ax1.plot(np.arange(0,Nk), zTP/ztotT, '-',  c='k')
         ax2.plot(np.arange(0,Nk), zTN/ztotN, '--', c=color)
         ax1.set_ylim([0.9, 1.0])
