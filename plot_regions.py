@@ -54,7 +54,7 @@ def plot_region_percentage_per_group(data, regions, group, x_pos, total_volumes,
         g.append( o )
         print(o)
         ax.bar(x_pos-x0+dx*i, o[1::]/total_volumes*100, width=0.1, edgecolor='k', linewidth=0.5, align='edge', label=s, color=my_cmap(i/len(group)))
-    ax.set_ylabel(r'Vcells / Vregion x 100', fontsize=FONT_AXIS_TITLE)
+    ax.set_ylabel(r'Volume percentage with ZsGreen+ cells', fontsize=FONT_AXIS_TITLE)
     ax.set_xticks(x_pos)
     ax.set_xticklabels(regions, fontsize=FONT_AXIS_TITLE)
     ax.tick_params(axis='y', which='major', labelsize=FONT_AXIS_TITLE)
@@ -172,7 +172,7 @@ if __name__ == "__main__":
         ax.plot(x_pos+0.25+0.1, data_group3[i,1::]/total_volumes*100, 'o', color='#ffea00', markeredgecolor='k', markersize=5, alpha=0.7)
     ax.bar(x_pos+0.25, means3/total_volumes*100, yerr=stads3/total_volumes*100, align='edge', width=0.2, capsize=7, edgecolor='k', linewidth=0.5, color='#ffea00', label="saline")
 
-    ax.set_ylabel(r'Vcells / Vregion x 100', fontsize=FONT_AXIS_TITLE)
+    ax.set_ylabel(r'Volume percentage with ZsGreen+ cells', fontsize=FONT_AXIS_TITLE)
     ax.set_xticks(x_pos)
     ax.set_xticklabels(regions, fontsize=FONT_AXIS_TITLE)
     ax.tick_params(axis='y', which='major', labelsize=FONT_AXIS_TITLE)
