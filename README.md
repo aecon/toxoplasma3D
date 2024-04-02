@@ -20,7 +20,7 @@ Data analysis pipeline for the quantification of ZsGreen+ cell volume in 3D imag
 
 Create a new conda environment.
 ```
-conda create -n "toxoplasma3D" python=3.7
+conda create -n "toxoplasma3D" python=3.8
 ```
 
 Activate the environment.
