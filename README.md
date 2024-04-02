@@ -10,7 +10,6 @@ Data analysis pipeline for the quantification of ZsGreen+ cell volume in 3D imag
 ### Requirements
 
 * [img3D](https://github.com/aecon/img3D)
-* [prionBrain3D](https://github.com/aecon/prionBrain3D)
 * [elastix](https://elastix.lumc.nl)
 * [Fiji](https://fiji.sc)
 * [AllenSDK](https://allensdk.readthedocs.io/en/latest)
