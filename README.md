@@ -43,7 +43,6 @@ The directories `pre-processing`, `analysis` and `plots` contain tools to detect
 ### pre-processing:
 Tools for stack pre-processing.
 * Conversion of image stacks from tif to raw/nrrd file formats.
-* Flipping of stacks (horizontal and/or stack flip) to match the Allen Brain Atlas orientation.
 
 ### analysis:
 Main pipeline for image processing of 3D stacks.
