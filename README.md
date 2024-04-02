@@ -124,5 +124,6 @@ for the publication:
 ## TODO
 * Replace alignment with newer version (AllenSDK).
 * Add `requirements.txt`.
+* Improve alignment of brain 4851.
 
 
