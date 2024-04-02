@@ -62,10 +62,6 @@ Tools to perform statistical analysis and generate paper figures.
 Tif stacks (3D image data) of mouse brains, obtained with light-sheet microscopy (mesoSPIM), imaged across the sagittal plane.
 
 ### Cohorts
-* Group 1 - Toxofilin-Cre
-* Group 2 - Gra16-Cre
-* Group 3 - saline
-
 ```
 Group 1 - Toxofilin-Cre:
 samples=(4834 4836 4844 4849 4851 4858 4864 4868)
