@@ -103,7 +103,7 @@ DONE        854652	4843	N	        M	Saline          group 3     YES.
 
 
 ### Additional data
-* zoom-in for sample 4864
+* 4x imaging zoom for sample 4864
 
 ```
 qnap1:FrancescaCatto_PhD/TOXOPLASMA/images_and_stitched/smal%20stacks_images_4x_1um%20resolution
