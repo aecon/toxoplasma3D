@@ -1,38 +1,83 @@
 # toxoplasma3D
 
-Data analysis pipeline for the quantification of neuronal cell volume in 3D image data of mouse brain scans, acquired by light-sheet microscopy (mesoSPIM).
+Data analysis pipeline for the quantification of ZsGreen+ cell volume in 3D image stacks of mouse brain scans, acquired by light-sheet microscopy (mesoSPIM).
 
 
-## Requirements
 
-* [img3D package](https://github.com/aecon/img3D)
-* [allenSDK library](https://allensdk.readthedocs.io/en/latest/)
-* Python packages: tifffile, numba, scipy, scikit-image, pandas, matplotlib
+## Installation
 
 
-## Data
+### Requirements
 
-### Groups
+* [img3D](https://github.com/aecon/img3D)
+* [prionBrain3D](https://github.com/aecon/prionBrain3D)
+* [elastix](https://elastix.lumc.nl)
+* [Fiji](https://fiji.sc)
+* [AllenSDK](https://allensdk.readthedocs.io/en/latest)
+* Python packages (see below)
+
+
+### Python packages
+
+Create a new conda environment.
 ```
-di=FastSSD/Athena/collabODED/data
-
-group 1:
-samples=(4834 4836 4844 4849 4851 4858 4864 4868)
-
-group 2:
-samples=(4837 4840 4847 4848 4850 4871 4873)
-
-saline:
-samples=(4838 4843)
+conda create -n "toxoplasma3D" python=3.7
 ```
+
+Activate the environment.
+```
+conda activate toxoplasma3D
+```
+
+Install python packages.
+```
+pip install -r requirements.txt
+```
+
+
+
+## Contents
+
+The directories `pre-processing`, `analysis` and `plots` contain tools to detect cells from whole 3D mouse brains, perform statistical analysis and generate figures for the corresponding publication.
+
+### pre-processing:
+Tools for stack pre-processing.
+* Conversion of image stacks from tif to raw/nrrd file formats.
+* Flipping of stacks (horizontal and/or stack flip) to match the Allen Brain Atlas orientation.
+
+### analysis:
+Main pipeline for image processing of 3D stacks.
+* Cell segmentation: Detection of candidate cells in 3D.
+* Artifact classification: Classification of candidate cells into true cells and artifacts.
+* Alignment: Registration to Allen Brain Atlas Reference space.
+* Voxelization: Apply a Gaussian smoothing with diameter 15 pixels, for visualization purposes.
+
+### plots:
+Tools to perform statistical analysis and generate paper figures.
+
+
+
+## Dataset
+
+Tif stacks (3D image data) of mouse brains, obtained with light-sheet microscopy (mesoSPIM), imaged across the sagittal plane.
 
 ### Cohorts
 * Group 1 - Toxofilin-Cre
 * Group 2 - Gra16-Cre
 * Group 3 - saline
 
+```
+Group 1 - Toxofilin-Cre:
+samples=(4834 4836 4844 4849 4851 4858 4864 4868)
 
-### Data overview
+Group 2 - Gra16-Cre:
+samples=(4837 4840 4847 4848 4850 4871 4873)
+
+Group 3 - Saline:
+samples=(4838 4843)
+```
+
+### Overview
 ```
 Status      Pan     Mouse	Ear Punch	Sex	Strains	        Group       Used in Image Processing
 DONE+CHK    854651	4834	N	        F	Toxofilin-Cre	group 1     YES (FC). split cerebellum
@@ -64,7 +109,7 @@ DONE        854652	4843	N	        M	Saline	        group 3     YES
 
 
 ### Additional data
-* zoom in for sample 4864
+* zoom-in for sample 4864
 
 ```
 qnap1:FrancescaCatto_PhD/TOXOPLASMA/images_and_stitched/smal%20stacks_images_4x_1um%20resolution
@@ -80,5 +125,6 @@ The pipeline was developed in the laboratories of Prof. Petros Koumoutsakos (Har
 
 for the publication:  
 `<TO BE ADDED>`
+
 
 
