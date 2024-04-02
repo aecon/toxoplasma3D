@@ -123,4 +123,6 @@ for the publication:
 
 ## TODO
 * Replace alignment with newer version (AllenSDK).
+* Add `requirements.txt`.
+
 
