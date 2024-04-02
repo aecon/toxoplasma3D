@@ -125,5 +125,5 @@ for the publication:
 * Replace alignment with newer version (AllenSDK).
 * Add `requirements.txt`.
 * Improve alignment of brain 4851.
-
+* Generalize paths to data.
 
