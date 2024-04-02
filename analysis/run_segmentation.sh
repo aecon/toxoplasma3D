@@ -29,7 +29,7 @@ for side in ${sides[@]}; do
     Imax=`cat manual_intensities.dat | grep ${sample} | awk '{print $3}'`
     echo $sample $side $Imin $Imax
 
-    python3 segmentation.py -i "${input}" -o "${outdir}" -Imin $Imin -Imax $Imax -v -p
+    python segmentation.py -i "${input}" -o "${outdir}" -Imin $Imin -Imax $Imax -v -p
 
     # detele intermediate files
     mkdir -p ${outdir}/bak
