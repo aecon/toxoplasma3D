@@ -37,20 +37,20 @@ pip install -r requirements.txt
 
 ## Contents
 
-The directories `pre-processing`, `analysis` and `plots` contain tools to detect cells from whole 3D mouse brains, perform statistical analysis and generate figures for the corresponding publication.
+The directories `pre-processing`, `processing` and `plotting` contain tools to detect cells from whole 3D mouse brains, perform statistical analysis and generate figures for the corresponding publication.
 
 ### pre-processing:
 Tools for stack pre-processing.
 * Conversion of image stacks from tif to raw/nrrd file formats.
 
-### analysis:
+### processing:
 Main pipeline for image processing of 3D stacks.
 * Cell segmentation: Detection of candidate cells in 3D.
 * Artifact classification: Classification of candidate cells into true cells and artifacts.
 * Alignment: Registration to Allen Brain Atlas Reference space.
 * Voxelization: Apply a Gaussian smoothing with diameter 15 pixels, for visualization purposes.
 
-### plots:
+### plotting:
 Tools to perform statistical analysis and generate paper figures.
 
 
