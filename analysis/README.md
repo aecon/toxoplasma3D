@@ -33,8 +33,10 @@ python classification.py -l "PATH/TO/LST/PICKLE/FILE" -d "PATH/TO/DENOISED/DATA"
 
 ## 3. alignment
 
-Allen Common Coordinate data (v3)
+Alignment of brains onto the Allen Brain Atlas Reference data.
+
+Usage:
 ```
-http://download.alleninstitute.org/informatics-archive/current-release/mouse_ccf/ 
+./run_align.sh
 ```
 
