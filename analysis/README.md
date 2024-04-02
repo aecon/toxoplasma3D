@@ -9,6 +9,7 @@ An updated version of this pipeline can be found in the repository [prionBrain3D
 ## 1. segmentation
 
 ```
+cd segmentation
 python segmentation.py -i "PATH/TO/SIGNAL/DATA/NRRD" -o "PATH/TO/OUTPUT/DIRECTORY" -Imin IMIN -Imax IMAX -v -p
 ```
 where `IMIN` and `IMAX` are intensity thresholds for the minimum and maximum normalized cell intensity.
@@ -26,6 +27,7 @@ Exclusion of illuminated vessels and vasculature parts from list of cadidate cel
 
 Usage:
 ```
+cd classification
 python classification.py -l "PATH/TO/LST/PICKLE/FILE" -d "PATH/TO/DENOISED/DATA"
 ```
 
@@ -37,6 +39,7 @@ Alignment of brains onto the Allen Brain Atlas Reference data.
 
 Usage:
 ```
+cd alignment
 ./run_align.sh
 ```
 
