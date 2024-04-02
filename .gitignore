@@ -3,3 +3,4 @@
 *.nrrd
 old
 tmp
+.DS_Store
