@@ -13,6 +13,7 @@ Data analysis pipeline for the quantification of ZsGreen+ cell volume in 3D imag
 * [elastix](https://elastix.lumc.nl)
 * [Fiji](https://fiji.sc)
 * [AllenSDK](https://allensdk.readthedocs.io/en/latest)
+* [ClearMap 2.0](https://christophkirst.github.io/ClearMap2Documentation/html/home.html)
 * Python packages (see below)
 
 
