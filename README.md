@@ -73,32 +73,32 @@ samples=(4838 4843)
 
 ### Overview
 ```
-Status      Pan     Mouse	Ear Punch	Sex	Straing         Group       Used in Image Processing?
-DONE+CHK    854651	4834	N	        F	Toxofilin-Cre   group 1     YES. Rip in cerebellum.
-DONE        854651	4836	L	        F	Toxofilin-Cre   group 1     YES. Left is missing cerebellum in some slices.
-DONE        854652	4844	L	        M	Toxofilin-Cre   group 1     YES.
-DONE        854654	4849	L	        M	Toxofilin-Cre   group 1     YES. Left+right missing cerebellum in some slices.
-DONE        854654	4851	Rx2	        M	Toxofilin-Cre   group 1     YES. Left+right missing cerebellum in some slices.
-DONE        864447	4858	R	        F	Toxofilin-Cre   group 1     YES. Left is missing cerebellum in some slices.
-DONE        864449	4864	N	        F	Toxofilin-Cre   group 1     YES.
-DONE        864449	4868	Rx2	        F	Toxofilin-Cre   group 1     YES. Left and Right missing cerebellum in some slices.
-            864449	4866	L	        F	Toxofilin-Cre   group 1     -NO. Missing part. Error in stitching format.
-            854661	4872	R	        M	Toxofilin-Cre   group 1     -NO. Missing part.
+Status      Pan     Mouse	Ear Punch	Sex	Straing         Group       Used?   Notes
+DONE+CHK    854651	4834	N	        F	Toxofilin-Cre   group 1     YES     Rip in cerebellum.
+DONE        854651	4836	L	        F	Toxofilin-Cre   group 1     YES     Left is missing cerebellum in some slices.
+DONE        854652	4844	L	        M	Toxofilin-Cre   group 1     YES
+DONE        854654	4849	L	        M	Toxofilin-Cre   group 1     YES     Left+right missing cerebellum in some slices.
+DONE        854654	4851	Rx2	        M	Toxofilin-Cre   group 1     YES     Left+right missing cerebellum in some slices.
+DONE        864447	4858	R	        F	Toxofilin-Cre   group 1     YES     Left is missing cerebellum in some slices.
+DONE        864449	4864	N	        F	Toxofilin-Cre   group 1     YES
+DONE        864449	4868	Rx2	        F	Toxofilin-Cre   group 1     YES     Left and Right missing cerebellum in some slices.
+            864449	4866	L	        F	Toxofilin-Cre   group 1     -NO     Missing part. Error in stitching format.
+            854661	4872	R	        M	Toxofilin-Cre   group 1     -NO     Missing part.
 
-DONE        854651	4837	B	        F	Gra16-Cre       group 2     YES. Small cerebellum part missing.
-DONE        854652	4840	R	        M	Gra16-Cre       group 2     YES. Small cerebellum part missing in left.
-DONE        854654	4847	N	        M	Gra16-Cre       group 2     YES. Small cerebellum part missing in left.
-DONE        854654	4848	R	        M	Gra16-Cre       group 2     YES. Medium cerebellum part missing, left.
-DONE        854654	4850	B	        M	Gra16-Cre       group 2     YES. Small cerebellum part missing in left.
-DONE        854661	4871	N	        M	Gra16-Cre       group 2     YES. Small parts are cut.
-DONE        854661	4873	L	        M	Gra16-Cre       group 2     YES.
-            854651	4835	R	        F	Gra16-Cre       group 2     -NO. Missing large part of cerebellum.
-            864447	4857	N	        F	Gra16-Cre       group 2     -NO. Left cerebellum is cut.
-            864449	4867	B	        F	Gra16-Cre       group 2     -NO. Large missing part in left hemisphere.
-            864449	4865	R	        F	Gra16-Cre       group 2     -NO. Stitched file not found (never received it).
+DONE        854651	4837	B	        F	Gra16-Cre       group 2     YES     Small cerebellum part missing.
+DONE        854652	4840	R	        M	Gra16-Cre       group 2     YES     Small cerebellum part missing in left.
+DONE        854654	4847	N	        M	Gra16-Cre       group 2     YES     Small cerebellum part missing in left.
+DONE        854654	4848	R	        M	Gra16-Cre       group 2     YES     Medium cerebellum part missing, left.
+DONE        854654	4850	B	        M	Gra16-Cre       group 2     YES     Small cerebellum part missing in left.
+DONE        854661	4871	N	        M	Gra16-Cre       group 2     YES     Small parts are cut.
+DONE        854661	4873	L	        M	Gra16-Cre       group 2     YES
+            854651	4835	R	        F	Gra16-Cre       group 2     -NO     Missing large part of cerebellum.
+            864447	4857	N	        F	Gra16-Cre       group 2     -NO     Left cerebellum is cut.
+            864449	4867	B	        F	Gra16-Cre       group 2     -NO     Large missing part in left hemisphere.
+            864449	4865	R	        F	Gra16-Cre       group 2     -NO     Stitched file not found (never received it).
 
-DONE        854651	4838	Rx2	        F	saline          group 3     YES.
-DONE        854652	4843	N	        M	Saline          group 3     YES.
+DONE        854651	4838	Rx2	        F	saline          group 3     YES
+DONE        854652	4843	N	        M	Saline          group 3     YES
 ```
 
 
