@@ -105,7 +105,7 @@ DONE        854652	4843	N	        M	Saline          group 3     YES
 
 ### Data resources
 
-The data used in the study are located in this [repository](https://unispital-my.sharepoint.com/:f:/r/personal/evaathena_economides_usz_ch/Documents/Bracha_et_al_2024_NatureMicrobiology?csf=1&web=1&e=q5ag04), containing the raw data per sample at the resolution of the Allen Brain Atlas (25 micro meters), 3D maps of the the detected cell colume per voxel, and the detected cell maps after voxelization.
+The data used in the study are located in this [repository](https://uzh-my.sharepoint.com/:f:/g/personal/athena_economides_uzh_ch/ElD8YsdOkgRCj-WijaWZVSwBEDG8VTzgM5tj7w5e3tXcBg?e=kFpOTW), containing the raw data per sample at the resolution of the Allen Brain Atlas (25 micro meters), 3D maps of the the detected cell colume per voxel, and the detected cell maps after voxelization.
 
 
 
