@@ -2,7 +2,10 @@
 
 Data analysis pipeline for the quantification of ZsGreen+ cell volume in 3D image stacks of mouse brain scans, acquired by light-sheet microscopy (mesoSPIM).
 
-
+Developed for the publication:  
+```
+Bracha S. et al., 2024, "Engineering a Brain Parasite for Intracellular Delivery of Proteins to the Central Nervous System", in review.
+```
 
 ## Installation
 
@@ -115,11 +118,6 @@ The pipeline was developed in the laboratories of Prof. Petros Koumoutsakos (Har
 * Athena Economides
 * Sergey Litvinov
 * Francesca Catto
-
-for the publication:  
-```
-Bracha S et al., 2024, Engineering a Brain Parasite for Intracellular Delivery of Proteins to the Central Nervous System, in review.
-```
 
 
 ## TODO
