@@ -1,11 +1,8 @@
 # toxoplasma3D
 
-Data analysis pipeline for the quantification of ZsGreen+ cell volume in 3D image stacks of mouse brain scans, acquired by light-sheet microscopy (mesoSPIM).
-
-Developed for the publication:  
-```
-Bracha S. et al., 2024, "Engineering a Brain Parasite for Intracellular Delivery of Proteins to the Central Nervous System", in review.
-```
+Data analysis pipeline for the quantification of ZsGreen+ cell volume in 3D image stacks of mouse brain scans, acquired by light-sheet microscopy (mesoSPIM). Developed for the publication:  
+* Bracha, Shahar, et al. "Engineering Toxoplasma gondii secretion systems for intracellular delivery of multiple large therapeutic proteins to neurons." Nature Microbiology (2024): 1-22.  
+[https://doi.org/10.1038/s41564-024-01750-6](https://doi.org/10.1038/s41564-024-01750-6)
 
 ## Installation
 
