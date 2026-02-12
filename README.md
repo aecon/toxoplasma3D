@@ -1,7 +1,9 @@
 # toxoplasma3D
 
-Data analysis pipeline for the quantification of ZsGreen+ cell volume in 3D image stacks of mouse brain scans, acquired by light-sheet microscopy (mesoSPIM). Developed for the publication:  
-* Bracha, Shahar, et al. "Engineering Toxoplasma gondii secretion systems for intracellular delivery of multiple large therapeutic proteins to neurons." Nature Microbiology (2024): 1-22.  
+toxoplasma3D is a Python-based analysis pipeline for quantifying ZsGreen+ cell volume from whole-brain 3D light-sheet microscopy (mesoSPIM) stacks, including preprocessing, 3D cell detection/segmentation with artifact filtering, and voxelized outputs for visualization. It also registers brains to the Allen Brain Atlas reference space and provides downstream statistics/plotting used to generate figures for the associated Nature Microbiology study on engineering Toxoplasma gondii secretion systems for neuronal protein delivery.
+
+Publication:  
+**Bracha, Shahar, et al. "Engineering Toxoplasma gondii secretion systems for intracellular delivery of multiple large therapeutic proteins to neurons." Nature Microbiology (2024): 1-22.**  
 [https://doi.org/10.1038/s41564-024-01750-6](https://doi.org/10.1038/s41564-024-01750-6)
 
 ## Installation
